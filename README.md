@@ -42,7 +42,7 @@ podman run -it --rm uvicorn-poetry-project-template:1.0.0
 
 ## Add pre-commit hook
 
-`.pre-commit-config.yaml` need to change `entry: ruff check` to `entry: poetry run ruff check` and `entry: ruff format` to `entry: poetry run ruff format`.
+`.pre-commit-config.yaml` need to change `entry: ruff check` to `entry: poetry run ruff check` and `entry: ruff format` to `entry: poetry run ruff format`. With `language: python` into `language: system`.
 
 ```bash
 poetry add --group dev pre-commit
