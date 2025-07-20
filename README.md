@@ -39,3 +39,12 @@ Run the containerized application:
 ```shell
 podman run -it --rm uvicorn-poetry-project-template:1.0.0
 ```
+
+## Fix GitHub Actions
+
+```bash
+poetry add --group dev pre-commit
+poetry run pre-commit autoupdate
+poetry run pre-commit install
+poetry run pre-commit run --all-files
+```
