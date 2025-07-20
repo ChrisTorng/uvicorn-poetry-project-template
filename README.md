@@ -48,3 +48,5 @@ poetry run pre-commit autoupdate
 poetry run pre-commit install
 poetry run pre-commit run --all-files
 ```
+
+git commit hook seems not working, so you need to run `pre-commit run --all-files` manually before commit.
